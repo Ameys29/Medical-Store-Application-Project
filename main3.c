@@ -102,7 +102,7 @@ void update(int index){
 }
 
 
-void delete(int index){
+void remove(int index){
 
     printf("\n Delete Existing %d th Medicine details\n", index+1);
     medicines[index].medID=0;
@@ -132,7 +132,7 @@ int main(){
             case 1: acceptAll(); break;
             case 2: showAll(); break;
             case 3: update(2); break;
-           // case 4: delete(1); break;
+            case 4: remove(1); break;
             case 5: return 0;
             default: printf("Invalid choice\n");
         }
